@@ -57,6 +57,9 @@ MAIL_MAILER=log
 以下の環境変数を追加する  
 QUEUE_DRIVER=database  
   
+laravel.logを追加  
+touch storage/logs/laravel.log
+  
 JWTの設定  
 php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"  
 php artisan jwt:secret  

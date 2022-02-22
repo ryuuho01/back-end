@@ -434,8 +434,7 @@ class AuthController extends Controller
     {
         $picture = $request->file('pic_path');
         $picture_name = $picture->getClientOriginalName();
-        // $picture->storeAs('public', $picture_name);
-        Storage::disk('s3')->putFileAs('/', $picture, $picture_name);
+        $picture->storeAs('public', $picture_name);
         $pic_path = "http://127.0.0.1:8000/storage/" . $picture_name;
 
         $area_id = Area::where('area_name', $request->area_name)->first();
