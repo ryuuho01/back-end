@@ -33,7 +33,7 @@ Windowsの場合
 cd C:\xampp\htdocs  
   
 GitHubからクローンし、フォルダに移動  
-git clone https://github.com/ryuuho01/back_end.git  
+git clone https://github.com/ryuuho01/back-end.git  
 cd back-end  
   
 (*)Composerをインストールされていない方  
